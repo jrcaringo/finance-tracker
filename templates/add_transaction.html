@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>Add Transaction</h2>
+
+<form method="POST">
+
+Amount
+<input name="amount" required>
+
+Category
+<select name="category">
+
+<option>Food</option>
+<option>Transport</option>
+<option>Bills</option>
+<option>Entertainment</option>
+
+</select>
+
+Description
+<input name="description">
+
+<button type="submit">Add</button>
+
+</form>
+
+{% endblock %}
